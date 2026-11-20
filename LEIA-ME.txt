@@ -1,0 +1,19 @@
+ENGLISH LESSONS - estrutura do site
+
+index.html                     Página inicial (lista de aulas)
+aulas/aula-01-verbo-to-be.html Aula 01 - Verbo TO BE
+css/style.css                  Todo o visual do site
+js/ilustracoes.js              Biblioteca de desenhos (personagens e cenas em SVG)
+js/aulas.js                    Lista de aulas mostrada na página inicial
+js/home.js                     Monta a página inicial
+js/aula01-dados.js             Textos das 30 frases da Aula 01
+js/aula01.js                   Monta a Aula 01 (diagramas, cartões, exercícios)
+
+Para abrir: dê dois cliques em index.html.
+Para publicar: envie a pasta inteira para qualquer hospedagem estática
+(GitHub Pages, Netlify, Vercel, hospedagem comum).
+
+Para criar uma nova aula:
+1. Copie aulas/aula-01-verbo-to-be.html com outro nome.
+2. Crie os arquivos de dados e de montagem da nova aula em js/.
+3. Em js/aulas.js, preencha o item da aula e mude disponivel para true.
