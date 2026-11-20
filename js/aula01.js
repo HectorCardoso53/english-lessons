@@ -178,7 +178,7 @@ $('bS').onchange=()=>{fillC();build()};$('bT').onchange=build;$('bC').onchange=b
   if(!ham)return;
   ham.onclick=()=>nav.classList.toggle('open');
   nav.querySelectorAll('.nav-links a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
-  document.addEventListener('click',e=>{if(!nav.contains(e.target))nav.classList.remove('open')});
+  document.addEventListener('click',e=>{if(!nav.contains(e.target)&&e.target!==ham&&!ham.contains(e.target))nav.classList.remove('open')});
 })();
 
 // sidenav scroll spy

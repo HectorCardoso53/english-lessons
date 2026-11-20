@@ -210,7 +210,7 @@ select.sel.ok{border-color:#16a34a;background:#f0fdf4}select.sel.bad{border-colo
 .foot{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
 
 /* ===== SITE (header, home, footer) ===== */
-.site-head{background:#0f172a;color:#fff}
+.site-head{background:#0f172a;color:#fff;position:sticky;top:0;z-index:60}
 .site-head .in{max-width:1140px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:Fredoka;font-weight:600;font-size:21px}
 .logo i{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#22c55e,#06b6d4);display:flex;align-items:center;justify-content:center;font-style:normal;font-size:16px;font-weight:700}
@@ -248,7 +248,6 @@ a.lesson:hover{transform:translateY(-3px);border-color:#22c55e}
 .lesson-nav span{opacity:.5}
 .lesson-nav small{display:block;color:var(--muted);font-weight:700}
 .site-foot{text-align:center;color:var(--muted);font-size:13px;padding:30px 16px 50px}
-nav.top{top:0}
 
 /* SIDE NAV */
 .sidenav{position:fixed;right:16px;top:72px;width:196px;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-radius:18px;padding:12px 10px;box-shadow:0 4px 20px rgba(15,23,42,.09);display:none;flex-direction:column;gap:2px;z-index:40;max-height:calc(100vh - 90px);overflow-y:auto}
@@ -265,19 +264,34 @@ nav.top{top:0}
 .sidenav a.snp:hover{background:#cffafe;color:#0e7490}
 .sidenav a.snpa:hover{background:#fef3c7;color:#92400e}
 .sidenav a.snf:hover{background:#ede9fe;color:#6d28d9}
-@media(min-width:1600px){.sidenav{display:flex}nav.top{display:none}html{scroll-padding-top:20px}}
-
-/* HAMBURGER */
+/* NAV LATERAL + HAMBÚRGUER */
 .nav-links{display:flex;gap:6px;align-items:center}
 .ham{display:none;background:none;border:none;cursor:pointer;padding:6px;border-radius:10px;flex-direction:column;gap:5px;align-items:center;justify-content:center;width:38px;height:36px;flex-shrink:0}
 .ham span{display:block;width:22px;height:2.5px;background:var(--ink);border-radius:2px;transition:transform .2s,opacity .2s}
 nav.top.open .ham span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
 nav.top.open .ham span:nth-child(2){opacity:0;transform:scaleX(0)}
 nav.top.open .ham span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+/* DESKTOP: sidebar fixa na esquerda */
+@media(min-width:901px){
+  html{scroll-padding-top:20px}
+  nav.top{position:fixed;left:0;top:60px;height:calc(100% - 60px);width:220px;border-bottom:none;border-right:1px solid var(--line);overflow-y:auto;background:#fff;box-shadow:2px 0 12px rgba(15,23,42,.06)}
+  nav.top .in{flex-direction:column;align-items:flex-start;overflow-x:visible;max-width:none;margin:0;padding:20px 10px;gap:3px;min-height:100%}
+  .ham{display:none!important}
+  .nav-links{display:flex!important;flex-direction:column;gap:3px;width:100%}
+  nav.top a{white-space:normal;border-radius:10px;display:flex;align-items:center;width:100%;font-size:13px;padding:8px 12px}
+  nav.top a.brand{background:var(--ink);color:#fff;font-family:Fredoka;font-weight:600;font-size:14px;border-radius:12px;margin-bottom:10px;justify-content:center;letter-spacing:.04em}
+  nav.top a.brand:hover{background:#334155}
+  .lesson-page .crumb,.lesson-page .wrap,.lesson-page .site-foot{margin-left:220px}
+}
+
+/* MOBILE: drawer hambúrguer da esquerda */
 @media(max-width:900px){
-  .ham{display:flex}
-  nav.top .in{flex-wrap:wrap;overflow-x:visible;gap:0;padding:8px 14px}
-  .nav-links{display:none;width:100%;padding:6px 0 2px}
+  nav.top{position:fixed;left:-270px;top:0;height:100%;width:260px;transition:left .25s ease;border-bottom:none;border-right:1px solid var(--line);overflow-y:auto;background:rgba(255,255,255,.98);backdrop-filter:blur(6px);z-index:50}
+  nav.top.open{left:0}
+  nav.top .in{flex-direction:column;align-items:flex-start;overflow-x:visible;max-width:none;margin:0;padding:72px 12px 24px;gap:4px;min-height:100%}
+  .ham{display:flex!important;position:fixed;left:12px;top:10px;z-index:60;background:rgba(255,255,255,.95);box-shadow:0 2px 10px rgba(0,0,0,.14)}
+  .nav-links{display:none;width:100%;padding:0}
   nav.top.open .nav-links{display:flex;flex-direction:column;gap:4px}
-  .nav-links a{text-align:center;justify-content:center}
+  .nav-links a{text-align:left;justify-content:flex-start;width:100%}
 }
