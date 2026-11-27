@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aula 02 · Greetings &amp; Farewells – English Lessons</title>
+<meta name="description" content="Aula 02: cumprimentos e despedidas em inglês nos registros formal, informal e playful, com ilustrações, diálogos e exercícios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+/* ── EXPRESSION CARDS ── */
+.gcard{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:22px;background:#fff;border-radius:24px;padding:22px;margin:20px 0;box-shadow:0 8px 24px rgba(15,23,42,.07);border-left:7px solid var(--gc,#334155)}
+@media(max-width:760px){.gcard{grid-template-columns:1fr}}
+.gcill{border-radius:14px;overflow:hidden;line-height:0}
+.gcill svg{width:100%;height:auto;display:block}
+.gcbody{display:flex;flex-direction:column;gap:9px}
+.gcmeta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.rb2{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:999px;font-weight:800;font-size:12.5px}
+.gccat{font-size:12px;font-weight:900;letter-spacing:.08em;color:var(--muted);background:#f1f5f9;border-radius:999px;padding:3px 10px}
+.gcen{font-family:Fredoka;font-size:clamp(22px,2.8vw,32px);font-weight:700;color:#0f172a}
+.gcen2{font-size:14.5px;color:#475569}
+.gcresp{background:#f0fdf4;border-radius:12px;padding:10px 14px;font-size:14.5px;border-left:4px solid #22c55e}
+.gcresp-label{display:block;font-size:11px;font-weight:900;letter-spacing:.08em;color:#15803d;margin-bottom:3px}
+.gcpt{font-size:17px;font-weight:800;color:#0f172a}
+.gcwhen{font-size:14px;color:#475569;background:#f8fafc;border-radius:10px;padding:7px 12px}
+.gcnote{font-size:13.5px;padding:8px 12px;border-radius:10px;background:#fff7ed;color:#9a3412;border:1px solid #fed7aa}
+/* ── SECTION HEADERS ── */
+.thead2{border-radius:28px;padding:32px 36px;color:#fff;margin:44px 0 10px;overflow:hidden}
+.thead2 h2{font-size:clamp(30px,4.5vw,50px);margin:0}
+.thead2 p{font-size:17px;max-width:760px;opacity:.95}
+.thead2.gf{background:linear-gradient(135deg,#1e3a8a,#3b82f6)}
+.thead2.gi{background:linear-gradient(135deg,#0e7490,#06b6d4)}
+.thead2.ff{background:linear-gradient(135deg,#78350f,#d97706)}
+.thead2.fi{background:linear-gradient(135deg,#14532d,#22c55e)}
+/* ── REGISTER GRID ── */
+.reg-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media(max-width:900px){.reg-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.reg-grid{grid-template-columns:1fr}}
+.regcard{border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.regcard-top{display:flex;align-items:center;gap:8px}
+.regcard-em{font-size:26px}
+.regcard-name{font-family:Fredoka;font-weight:700;font-size:18px}
+.regcard-use{font-size:13.5px;color:#475569;margin:0}
+.regcard-ex{font-size:14px;margin:0;padding:7px 10px;background:rgba(255,255,255,.65);border-radius:8px}
+/* ── DIALOGUES ── */
+.dl-ctx{font-family:Fredoka;font-size:16px;font-weight:600;color:var(--muted);margin-bottom:14px;padding:8px 14px;background:#f8fafc;border-radius:10px;border-left:4px solid #cbd5e1}
+.dl{display:flex;flex-direction:column;gap:10px}
+.dl-line{display:flex;gap:12px;align-items:flex-end;max-width:92%}
+.dl-line.dl-r{flex-direction:row-reverse;align-self:flex-end}
+.dl-name{font-family:Fredoka;font-size:12px;font-weight:600;color:var(--muted);white-space:nowrap;padding-bottom:2px}
+.dl-bubble{border-radius:16px;padding:12px 15px;display:flex;flex-direction:column;gap:4px;position:relative}
+.dl-l .dl-bubble{background:#e0f2fe;border-bottom-left-radius:4px}
+.dl-r .dl-bubble{background:#dcfce7;border-bottom-right-radius:4px}
+.dl-en{font-family:Fredoka;font-size:17px;font-weight:600;color:#0f172a}
+.dl-pt{font-size:12.5px;color:#475569;font-weight:700}
+/* ── EXERCISES ── */
+.gex-row{padding:12px 0;border-bottom:1px dashed var(--line)}
+.gex-expr{font-family:Fredoka;font-size:19px;font-weight:600;color:#0f172a;margin-bottom:8px}
+.gex-q{font-family:Fredoka;font-size:20px;color:#0f172a;min-width:220px;flex:1}
+.gex-picks{display:flex;flex-direction:column;gap:8px}
+.gex-grp{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.gex-grp-label{font-size:12px;font-weight:900;letter-spacing:.08em;color:var(--muted);min-width:60px}
+.gex-btn{font-family:Fredoka;font-size:13.5px;font-weight:600;border:1.5px solid #cbd5e1;background:#fff;border-radius:999px;padding:4px 12px;cursor:pointer}
+.gex-btn:hover{background:#f1f5f9}
+.gex-btn.sel2{background:#0f172a;color:#fff;border-color:#0f172a}
+.gex-btn.ok2{background:#16a34a;border-color:#16a34a;color:#fff}
+.gex-btn.bad2{background:#dc2626;border-color:#dc2626;color:#fff}
+.gex-fb2{font-size:13.5px;font-weight:700;padding:4px 0;margin-top:4px}
+.gex-fb2.ok{color:#15803d}.gex-fb2.bad{color:#b91c1c}
+.gex-mcopts{display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.gex-mc{font-family:Nunito;font-size:14px;font-weight:700;border:1.5px solid #cbd5e1;background:#fff;border-radius:12px;padding:7px 12px;cursor:pointer;text-align:left}
+.gex-mc:hover{background:#f1f5f9}
+.gex-mc.ok{background:#16a34a;border-color:#16a34a;color:#fff}
+.gex-mc.bad{background:#dc2626;border-color:#dc2626;color:#fff}
+.gex-hint{font-size:12.5px;color:var(--muted);font-weight:700;margin-top:4px}
+.gblunder{border:2px solid #fed7aa;border-radius:18px;padding:16px;margin:14px 0;background:#fff7ed}
+.gblunder-wrong{font-family:Fredoka;font-size:16px;color:#9a3412;margin-bottom:10px}
+.gblunder-fix{margin-top:10px;padding-top:10px;border-top:1px dashed #fed7aa}
+.gblunder-fix-en{font-family:Fredoka;font-size:16px;color:#15803d;margin-bottom:6px}
+.gblunder-explain{font-size:14px;color:#334155}
+/* ── ACTIVITY AVATARS ── */
+.dl-av{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Fredoka;font-size:17px;font-weight:700;color:#fff;flex-shrink:0;align-self:flex-end}
+.dl-alex{background:#f59e0b}
+.dl-jordan{background:#10b981}
+/* ── COVER ── */
+.g2cover{background:linear-gradient(135deg,#0f172a,#1e3a8a 50%,#059669);color:#fff}
+.g2cover h1{font-size:clamp(38px,7vw,80px);margin:0;font-weight:700}
+.g2cover h1 em{background:linear-gradient(90deg,#4ade80,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:normal}
+.g2cover .sub{font-size:clamp(16px,2.2vw,22px);opacity:.92;font-family:Fredoka;margin-top:6px}
+.g2regrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0}
+@media(max-width:760px){.g2regrow{grid-template-columns:repeat(2,1fr)}}
+.g2reg-pill{border-radius:16px;padding:12px;text-align:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+.g2reg-pill span{display:block;font-family:Fredoka;font-weight:600;font-size:15px}
+.g2reg-pill small{font-size:12.5px;opacity:.8}
+</style>
+</head>
+<body class="lesson-page">
+
+<header class="site-head">
+  <div class="in">
+    <a class="logo" href="../index.html"><i>EN</i>English Lessons</a>
+    <nav>
+      <a href="../index.html">Início</a>
+      <a href="../index.html#aulas">Aulas</a>
+      <a class="on" href="aula-02-greetings.html">Aula 02</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumb"><a href="../index.html">Início</a> › <a href="../index.html#aulas">Aulas</a> › Aula 02 · Greetings &amp; Farewells</div>
+
+<button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+
+<nav class="top" id="topNav"><div class="in">
+  <a class="brand" href="#inicio">AULA 02</a>
+  <div class="nav-links">
+    <a href="#registros">1 · Registros</a>
+    <a href="#saudacoes-formais">2 · Greeting Formal</a>
+    <a href="#saudacoes-informais">3 · Greeting Informal</a>
+    <a href="#atividade">4 · Atividade</a>
+    <a href="#despedidas-formais">5 · Farewell Formal</a>
+    <a href="#despedidas-informais">6 · Farewell Informal</a>
+    <a href="#dialogos">7 · Diálogos</a>
+    <a href="#exercicios">8 · Exercícios</a>
+    <a href="#resumo">Resumo</a>
+  </div>
+</div></nav>
+
+<nav class="sidenav" id="sidenav">
+  <span class="snav-brand">AULA 02</span>
+  <a href="#inicio">Início</a>
+  <a href="#registros">1 · Registros</a>
+  <a href="#saudacoes-formais">2 · Greeting Formal</a>
+  <a href="#saudacoes-informais">3 · Greeting Informal</a>
+  <a href="#atividade">4 · Atividade</a>
+  <a href="#despedidas-formais">5 · Farewell Formal</a>
+  <a href="#despedidas-informais">6 · Farewell Informal</a>
+  <a href="#dialogos">7 · Diálogos</a>
+  <a href="#exercicios">8 · Exercícios</a>
+  <a href="#resumo">Resumo</a>
+</nav>
+
+<div class="wrap">
+
+<!-- COVER -->
+<section id="inicio" class="page g2cover">
+  <div class="kicker" style="background:rgba(255,255,255,.18);color:#fff">Apostila de Inglês · Nível iniciante</div>
+  <h1>GREETINGS &amp; <em>FAREWELLS</em></h1>
+  <div class="sub">Cumprimentos e Despedidas · Formal · Informal · Playful · 16 expressões ilustradas</div>
+  <div class="g2regrow">
+    <div class="g2reg-pill"><span>🎩 Formal</span><small>escritório &amp; negócios</small></div>
+    <div class="g2reg-pill"><span>😊 Neutro</span><small>uso geral</small></div>
+    <div class="g2reg-pill"><span>👋 Informal</span><small>amigos &amp; família</small></div>
+    <div class="g2reg-pill"><span>🎉 Playful</span><small>casual &amp; jovem</small></div>
+  </div>
+  <p style="font-size:17px;opacity:.93;max-width:820px">Saber cumprimentar e se despedir no <b>tom certo</b> é essencial. As mesmas palavras que criam conexão com amigos podem soar estranhas numa entrevista — e vice-versa. Nesta aula você aprende <b>16 expressões</b> divididas em 4 registros para cada situação.</p>
+  <div class="toc" style="margin-top:20px">
+    <a href="#registros" style="background:rgba(255,255,255,.92)">1 · Os 4 registros<span>Formal · Neutro · Informal · Playful</span></a>
+    <a href="#saudacoes-formais" style="background:rgba(255,255,255,.92)">2 · Greeting Formal<span>3 expressões ilustradas</span></a>
+    <a href="#saudacoes-informais" style="background:rgba(255,255,255,.92)">3 · Greeting Informal<span>5 expressões ilustradas</span></a>
+    <a href="#atividade" style="background:rgba(255,255,255,.92)">4 · Atividade do Professor<span>Diálogo: encontro na rua</span></a>
+    <a href="#despedidas-formais" style="background:rgba(255,255,255,.92)">5 · Farewell Formal<span>4 expressões ilustradas</span></a>
+    <a href="#despedidas-informais" style="background:rgba(255,255,255,.92)">6 · Farewell Informal<span>4 expressões ilustradas</span></a>
+    <a href="#dialogos" style="background:rgba(255,255,255,.92)">7 · Diálogos completos<span>Formal e informal na prática</span></a>
+    <a href="#exercicios" style="background:rgba(255,255,255,.92)">8 · Exercícios interativos<span>4 atividades com correção</span></a>
+  </div>
+</section>
+
+<!-- REGISTROS -->
+<section id="registros" class="page">
+  <div class="kicker">Capítulo 1</div>
+  <h2 style="font-size:clamp(26px,3.8vw,40px)">Os 4 registros: como escolher o tom certo?</h2>
+  <p class="lead">Em inglês, o <b>registro</b> é o tom que você usa dependendo da situação. Pense nele como a roupa adequada para cada ocasião — não se usa terno na praia nem bermuda numa reunião de diretoria.</p>
+  <div id="regIntro"></div>
+  <div class="pnum">PÁGINA 2</div>
+</section>
+
+<!-- GREETING FORMAL -->
+<div id="saudacoes-formais" class="thead2 gf">
+  <div class="kicker" style="background:rgba(255,255,255,.2)">Capítulo 2</div>
+  <h2>Greeting Formal · Cumprimento Formal</h2>
+  <p>Use estes cumprimentos em <b>escritórios, entrevistas, aulas e qualquer situação profissional</b>. O tom respeitoso mostra que você entende o contexto.</p>
+</div>
+<div id="cards-gf"></div>
+
+<!-- GREETING INFORMAL -->
+<div id="saudacoes-informais" class="thead2 gi">
+  <div class="kicker" style="background:rgba(255,255,255,.2)">Capítulo 3</div>
+  <h2>Greeting Informal · Cumprimento Casual</h2>
+  <p>Expressões para o dia a dia com <b>amigos, família, vizinhos e colegas</b>. São amigáveis, versáteis e muito naturais.</p>
+</div>
+<div id="cards-gi"></div>
+
+<!-- ATIVIDADE DO PROFESSOR -->
+<section id="atividade" class="page">
+  <div class="kicker" style="background:#059669">📝 Teacher's Activity</div>
+  <h2 style="font-size:clamp(24px,3.5vw,38px)">Chapter 4 · Dialogue: Street Encounter</h2>
+
+  <div class="note b">
+    <h4>📋 Activity</h4>
+    <p>Create a dialogue between two people who meet on the street and talk about their families. Use the greetings learned in class (formal and informal).</p>
+  </div>
+
+  <h3 style="margin-top:24px;font-size:19px">Characters: Alex and Jordan — old friends who run into each other on the street</h3>
+
+  <div id="atividadeScene" style="width:100%;border-radius:18px;overflow:hidden;margin:18px 0;line-height:0"></div>
+
+  <div class="dl-ctx">🏙️ Scene: two people unexpectedly meet on the street</div>
+  <div class="dl" style="margin-bottom:24px">
+    <div class="dl-line dl-l">
+      <div class="dl-av dl-alex">A</div>
+      <div class="dl-bubble"><div class="dl-en">Hey, Jordan! Long time no see!</div></div>
+    </div>
+    <div class="dl-line dl-r">
+      <div class="dl-av dl-jordan">J</div>
+      <div class="dl-bubble"><div class="dl-en">Alex! How are you doing today?</div></div>
+    </div>
+    <div class="dl-line dl-l">
+      <div class="dl-av dl-alex">A</div>
+      <div class="dl-bubble"><div class="dl-en">I'm great, thanks! What about you?</div></div>
+    </div>
+    <div class="dl-line dl-r">
+      <div class="dl-av dl-jordan">J</div>
+      <div class="dl-bubble"><div class="dl-en">I'm good! Hey, how is your family?</div></div>
+    </div>
+    <div class="dl-line dl-l">
+      <div class="dl-av dl-alex">A</div>
+      <div class="dl-bubble"><div class="dl-en">They are great, thanks for asking! My mom and dad are healthy. My sister is busy — she is a teacher now!</div></div>
+    </div>
+    <div class="dl-line dl-r">
+      <div class="dl-av dl-jordan">J</div>
+      <div class="dl-bubble"><div class="dl-en">Oh, really? That's wonderful! My brother is a student. He is at university.</div></div>
+    </div>
+    <div class="dl-line dl-l">
+      <div class="dl-av dl-alex">A</div>
+      <div class="dl-bubble"><div class="dl-en">Nice! And your parents? How are they?</div></div>
+    </div>
+    <div class="dl-line dl-r">
+      <div class="dl-av dl-jordan">J</div>
+      <div class="dl-bubble"><div class="dl-en">They are fine. My mom is at home and my dad is at work.</div></div>
+    </div>
+    <div class="dl-line dl-l">
+      <div class="dl-av dl-alex">A</div>
+      <div class="dl-bubble"><div class="dl-en">Great! Your family is amazing.</div></div>
+    </div>
+    <div class="dl-line dl-r">
+      <div class="dl-av dl-jordan">J</div>
+      <div class="dl-bubble"><div class="dl-en">Thank you! Your family is great too. Well, I have to go — see you!</div></div>
+    </div>
+    <div class="dl-line dl-l">
+      <div class="dl-av dl-alex">A</div>
+      <div class="dl-bubble"><div class="dl-en">See you later!</div></div>
+    </div>
+  </div>
+
+  <h3 style="font-size:18px;margin-bottom:10px">Family vocabulary used in the dialogue</h3>
+  <table class="tbl">
+    <tr><th>Word</th><th>Dialogue example</th></tr>
+    <tr><td><b>mom / mother</b></td><td><i>My mom is at home.</i></td></tr>
+    <tr><td><b>dad / father</b></td><td><i>My dad is at work.</i></td></tr>
+    <tr><td><b>sister</b></td><td><i>My sister is a teacher.</i></td></tr>
+    <tr><td><b>brother</b></td><td><i>My brother is a student.</i></td></tr>
+    <tr><td><b>parents</b></td><td><i>My parents are healthy.</i></td></tr>
+    <tr><td><b>family</b></td><td><i>How is your family?</i></td></tr>
+  </table>
+
+  <div class="note g" style="margin-top:16px">
+    <h4>✅ Greetings used in the activity (Chapter 3)</h4>
+    <p><b>"Hey!"</b> → Informal greeting — perfect for a casual street encounter.<br>
+    <b>"Long time no see!"</b> → Informal/playful greeting — signals they're old friends who haven't seen each other in a while.<br>
+    <b>"How are you doing today?"</b> → Informal variation of Hello / How are you?</p>
+  </div>
+
+  <div class="note y" style="margin-top:14px">
+    <h4>💡 Verb TO BE in the activity (Lesson 01)</h4>
+    <p>The dialogue uses several forms of TO BE to talk about family:
+    <b>I am</b> (I'm) · <b>She is</b> · <b>He is</b> · <b>They are</b> · <b>My mom is</b> · <b>My dad is</b></p>
+  </div>
+
+  <div class="pnum">ACTIVITY</div>
+</section>
+
+<!-- FAREWELL FORMAL -->
+<div id="despedidas-formais" class="thead2 ff">
+  <div class="kicker" style="background:rgba(255,255,255,.2)">Capítulo 5</div>
+  <h2>Farewell Formal · Despedida Formal</h2>
+  <p>Encerrar uma conversa profissional da forma certa é tão importante quanto começar bem. Essas despedidas transmitem <b>respeito, profissionalismo e consideração</b>.</p>
+</div>
+<div id="cards-ff"></div>
+
+<!-- FAREWELL INFORMAL -->
+<div id="despedidas-informais" class="thead2 fi">
+  <div class="kicker" style="background:rgba(255,255,255,.2)">Capítulo 6</div>
+  <h2>Farewell Informal · Despedida Casual</h2>
+  <p>Despedidas calorosas e descontraídas para usar com <b>pessoas que você conhece bem</b>. Algumas são muito enérgicas e divertidas.</p>
+</div>
+<div id="cards-fi"></div>
+
+<!-- DIALOGUES -->
+<section id="dialogos" class="page">
+  <div class="kicker">Capítulo 7</div>
+  <h2 style="font-size:clamp(26px,3.8vw,40px)">Diálogos completos na prática</h2>
+  <p class="lead">Veja como as expressões funcionam em contexto real. Repare como o registro se mantém consistente ao longo de toda a conversa.</p>
+
+  <h3 style="font-size:21px;margin-top:24px">🎩 Diálogo 1 — Reunião de negócios (Formal)</h3>
+  <div id="dialog1"></div>
+
+  <h3 style="font-size:21px;margin-top:28px">👋 Diálogo 2 — Amigos se reencontram (Informal / Playful)</h3>
+  <div id="dialog2"></div>
+
+  <div class="note b" style="margin-top:20px">
+    <h4>🔑 Regra de ouro: mantenha o registro consistente</h4>
+    <p>Uma vez que você identifica o contexto (formal ou informal), <b>mantenha o mesmo tom do início ao fim</b>. Misturar "How do you do?" com "Peace out!" na mesma conversa soa inconsistente e pode confundir o interlocutor.</p>
+  </div>
+  <div class="pnum">DIÁLOGOS</div>
+</section>
+
+<!-- EXERCISES -->
+<section id="exercicios" class="page">
+  <div class="kicker">Capítulo 8</div>
+  <h2 style="font-size:clamp(26px,3.8vw,40px)">Exercícios interativos</h2>
+  <p class="lead">Pratique com os 4 exercícios abaixo. Sua pontuação aparece no placar — tente bater o seu próprio recorde!</p>
+  <div id="exs2"></div>
+  <div class="score" id="score2">Placar: 0 de 40 pontos</div>
+</section>
+
+<!-- RESUMO -->
+<section id="resumo" class="page">
+  <div class="kicker">Resumo</div>
+  <h2 style="font-size:clamp(26px,3.8vw,40px)">Folha-resumo para revisar</h2>
+  <div class="grid2">
+    <div>
+      <h3 style="color:#1e40af;font-size:20px">🎩 Greetings (Cumprimentos)</h3>
+      <table class="tbl" style="margin-top:8px">
+        <tr><th>Expressão</th><th>Tom</th></tr>
+        <tr><td><b>Good morning / afternoon / evening</b></td><td><span class="rb2" style="background:#dbeafe;color:#1e40af;border:1px solid #93c5fd">🎩 Formal</span></td></tr>
+        <tr><td><b>How do you do?</b></td><td><span class="rb2" style="background:#dbeafe;color:#1e40af;border:1px solid #93c5fd">🎩 Formal</span></td></tr>
+        <tr><td><b>It is a pleasure to meet you.</b></td><td><span class="rb2" style="background:#dbeafe;color:#1e40af;border:1px solid #93c5fd">🎩 Formal</span></td></tr>
+        <tr><td><b>Hello! How are you?</b></td><td><span class="rb2" style="background:#cffafe;color:#0e7490;border:1px solid #67e8f9">😊 Neutro</span></td></tr>
+        <tr><td><b>Hey there! / Hiya!</b></td><td><span class="rb2" style="background:#dcfce7;color:#15803d;border:1px solid #86efac">👋 Informal</span></td></tr>
+        <tr><td><b>How's it going? / How have you been?</b></td><td><span class="rb2" style="background:#dcfce7;color:#15803d;border:1px solid #86efac">👋 Informal</span></td></tr>
+        <tr><td><b>What's up? / What's new?</b></td><td><span class="rb2" style="background:#ede9fe;color:#6d28d9;border:1px solid #c4b5fd">🎉 Playful</span></td></tr>
+        <tr><td><b>Long time no see! / Look who it is!</b></td><td><span class="rb2" style="background:#ede9fe;color:#6d28d9;border:1px solid #c4b5fd">🎉 Playful</span></td></tr>
+      </table>
+    </div>
+    <div>
+      <h3 style="color:#78350f;font-size:20px">👋 Farewells (Despedidas)</h3>
+      <table class="tbl" style="margin-top:8px">
+        <tr><th>Expressão</th><th>Tom</th></tr>
+        <tr><td><b>Goodbye. / Have a wonderful day.</b></td><td><span class="rb2" style="background:#dbeafe;color:#1e40af;border:1px solid #93c5fd">🎩 Formal</span></td></tr>
+        <tr><td><b>It was a pleasure speaking with you.</b></td><td><span class="rb2" style="background:#dbeafe;color:#1e40af;border:1px solid #93c5fd">🎩 Formal</span></td></tr>
+        <tr><td><b>I look forward to our next meeting.</b></td><td><span class="rb2" style="background:#dbeafe;color:#1e40af;border:1px solid #93c5fd">🎩 Formal</span></td></tr>
+        <tr><td><b>Good night!</b></td><td><span class="rb2" style="background:#cffafe;color:#0e7490;border:1px solid #67e8f9">😊 Neutro</span></td></tr>
+        <tr><td><b>See you later! / Catch you soon!</b></td><td><span class="rb2" style="background:#dcfce7;color:#15803d;border:1px solid #86efac">👋 Informal</span></td></tr>
+        <tr><td><b>Take care! / Have a good one!</b></td><td><span class="rb2" style="background:#dcfce7;color:#15803d;border:1px solid #86efac">👋 Informal</span></td></tr>
+        <tr><td><b>I've got to run! / I'm off!</b></td><td><span class="rb2" style="background:#ede9fe;color:#6d28d9;border:1px solid #c4b5fd">🎉 Playful</span></td></tr>
+        <tr><td><b>Peace out! / Catch you on the flip side!</b></td><td><span class="rb2" style="background:#ede9fe;color:#6d28d9;border:1px solid #c4b5fd">🎉 Playful</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="note r" style="margin-top:20px">
+    <h4>⚠️ Os 3 erros mais comuns</h4>
+    <ol style="margin:0;padding-left:20px">
+      <li><b>"Good night"</b> como cumprimento → ❌ Nunca! É só despedida ou antes de dormir. Use <b>"Good evening"</b> para cumprimentar à noite.</li>
+      <li><b>"How do you do?"</b> com amigos → ❌ Extremamente formal. Resposta certa: repetir a pergunta, nunca "Fine, thanks!"</li>
+      <li>Gírias (<b>"What's up?", "Peace out!"</b>) em contexto formal → ❌ Fuja em entrevistas, reuniões e lojas elegantes.</li>
+    </ol>
+  </div>
+
+  <div class="note g" style="margin-top:16px">
+    <h4>✅ Checklist para escolher a expressão certa</h4>
+    <ol style="margin:0;padding-left:20px">
+      <li>Identifique o contexto: <b>formal</b> ou <b>casual</b>?</li>
+      <li>Pense em quem está do outro lado: colega próximo, cliente, amigo, chefe?</li>
+      <li>Escolha o <b>registro</b> adequado (🎩 Formal / 😊 Neutro / 👋 Informal / 🎉 Playful).</li>
+      <li>Lembre-se da <b>resposta esperada</b> para cada expressão.</li>
+      <li>Mantenha o mesmo tom do início ao fim da conversa. 🎉</li>
+    </ol>
+  </div>
+
+  <div class="foot">Apostila ilustrada · Greetings &amp; Farewells · Aula 02</div>
+</section>
+
+</div>
+
+<div class="wrap">
+  <div class="lesson-nav">
+    <a href="aula-01-verbo-to-be.html"><small>← Aula anterior</small>Aula 01 · Verbo TO BE</a>
+    <span><small>Próxima aula →</small>Aula 03 · em breve</span>
+  </div>
+</div>
+
+<footer class="site-foot">English Lessons · Aula 02 · Greetings &amp; Farewells</footer>
+
+<script src="../js/ilustracoes.js"></script>
+<script src="../js/aula02-dados.js"></script>
+<script src="../js/aula02.js"></script>
+</body>
+</html>
